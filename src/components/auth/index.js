@@ -12,7 +12,7 @@ const getParameterByName = (name, url)=> {
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 const client_secret = "50cdc33cc501f6ef3a149c56ad92ffeb";
-const redirect_uri  = "http://localhost:3000/auth";
+const redirect_uri  = "https://sunburn21.github.io/auth";
 const client_id = '83c9543d85c56057657533b11640f5e3';
 class Auth extends Component {
   componentDidMount = async () => {

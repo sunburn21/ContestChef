@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/contestchef/static/css/main.3079944f.chunk.css",
-    "main.js": "/contestchef/static/js/main.e332221f.chunk.js",
-    "main.js.map": "/contestchef/static/js/main.e332221f.chunk.js.map",
+    "main.js": "/contestchef/static/js/main.5ee3527c.chunk.js",
+    "main.js.map": "/contestchef/static/js/main.5ee3527c.chunk.js.map",
     "runtime-main.js": "/contestchef/static/js/runtime-main.4512d3a5.js",
     "runtime-main.js.map": "/contestchef/static/js/runtime-main.4512d3a5.js.map",
     "static/css/2.36b4f1ac.chunk.css": "/contestchef/static/css/2.36b4f1ac.chunk.css",
     "static/js/2.5e38d60e.chunk.js": "/contestchef/static/js/2.5e38d60e.chunk.js",
     "static/js/2.5e38d60e.chunk.js.map": "/contestchef/static/js/2.5e38d60e.chunk.js.map",
     "index.html": "/contestchef/index.html",
-    "precache-manifest.8bf7ee6ff7d69a11b03510c0857232fd.js": "/contestchef/precache-manifest.8bf7ee6ff7d69a11b03510c0857232fd.js",
+    "precache-manifest.76c2b24a31e9177f5c6162eade18e7f9.js": "/contestchef/precache-manifest.76c2b24a31e9177f5c6162eade18e7f9.js",
     "service-worker.js": "/contestchef/service-worker.js",
     "static/css/2.36b4f1ac.chunk.css.map": "/contestchef/static/css/2.36b4f1ac.chunk.css.map",
     "static/css/main.3079944f.chunk.css.map": "/contestchef/static/css/main.3079944f.chunk.css.map",
@@ -20,6 +20,6 @@
     "static/css/2.36b4f1ac.chunk.css",
     "static/js/2.5e38d60e.chunk.js",
     "static/css/main.3079944f.chunk.css",
-    "static/js/main.e332221f.chunk.js"
+    "static/js/main.5ee3527c.chunk.js"
   ]
 }

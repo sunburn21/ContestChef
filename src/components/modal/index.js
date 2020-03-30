@@ -20,11 +20,6 @@ class SubModal extends Component{
             isLoading : false
         };
       }
-    // componentDidMount(){
-    //     this.setState({languages:this.props.languages},()=>{
-    //         console.log({lang:this.state.languages});
-    //     }); 
-    // }
     setShow = (val)=>{
         this.setState({show:val,langs:this.props.langs}); 
     }

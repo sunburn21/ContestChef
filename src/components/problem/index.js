@@ -26,9 +26,6 @@ class Problem extends Component{
         }
         console.log(problem.result.data.content);
         await this.setState({...problem.result.data.content,submissions:submissions.result.data.content})
-        // await this.setState({body:this.state.body.replace("```"," ").replace("###","\n###")},()=>{
-        //     console.log(this.state.body);
-        // });
         await this.setState({body:this.state.body.replace(/###/gi,"\n###").replace(/`/gi,"")});
       }
     render(){

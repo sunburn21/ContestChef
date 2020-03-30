@@ -10,7 +10,7 @@ class ProblemList extends Component{
     };
   }
   onProblemClick = (ele)=>{
-    this.props.history.push(`/problem/${ele.contestCode}/${ele.problemCode}`);
+    this.props.history.push(`/contestchef/problem/${ele.contestCode}/${ele.problemCode}`);
   }
   render(){
     const {problems} = this.props;

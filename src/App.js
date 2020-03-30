@@ -42,11 +42,11 @@ class App extends Component{
       <Router>
       <div className="App">
         <div style={{position:"fixed",left:'0',top:'0',fontSize:'30px',display:'flex',width:'150px',justifyContent:'space-around'}}> 
-        <Link style={{color:'#333333'}} to='/'> <IoIosHome/></Link>
+        <Link style={{color:'#333333'}} to='/home'> <IoIosHome/></Link>
         <Link style={{color:'#333333'}} to='/login'><FaSignInAlt/><span style={{fontSize:'18px'}}>Login</span> </Link>
         </div>
         <Switch>
-          <Route path='/' exact  render={(props)=>isLoggedIn?<Home {...props} user = {this.state.user} />:<LoginPage {...props} />}/>;
+          <Route path='/home' exact  render={(props)=>isLoggedIn?<Home {...props} user = {this.state.user} />:<LoginPage {...props} />}/>;
           <Route path='/login' exact component={LoginPage}/>;
           {isLoggedIn?null:<Route path="/auth" exact component={Auth({authUser:this.authUser,state:this.state})} />}
           <Route path='/contest/:id' render={(props)=>isLoggedIn?<ContestDetails {...props} user = {this.state.user} />:<LoginPage {...props}  />}/>

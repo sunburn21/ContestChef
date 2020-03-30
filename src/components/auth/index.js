@@ -26,7 +26,7 @@ class Auth extends Component {
           await this.props.data.authUser();
         }
           if(!this.props.data.state.user) this.props.history.push('/login');
-          this.props.history.push('/');    
+          this.props.history.push('/home');    
   };
 
   render() {

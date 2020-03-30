@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "d91a7093f9fdf7d049e1147effc9aa19",
+    "revision": "00f330728e52534934888e291de24dd3",
     "url": "/contestchef/index.html"
   },
   {
@@ -8,7 +8,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/contestchef/static/css/2.36b4f1ac.chunk.css"
   },
   {
-    "revision": "6c582e54f528c63e2bb2",
+    "revision": "e61ee21770c6ec238e62",
     "url": "/contestchef/static/css/main.3079944f.chunk.css"
   },
   {
@@ -20,8 +20,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/contestchef/static/js/2.5e38d60e.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "6c582e54f528c63e2bb2",
-    "url": "/contestchef/static/js/main.5a4aa6f0.chunk.js"
+    "revision": "e61ee21770c6ec238e62",
+    "url": "/contestchef/static/js/main.b1de6994.chunk.js"
   },
   {
     "revision": "99924e7e8f7b6687f835",

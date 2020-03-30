@@ -3,7 +3,7 @@ import axios from 'axios';
 import "./index.css";
 import {login} from '../../api/auth';
 const client_id =  '83c9543d85c56057657533b11640f5e3'
-const url = "https://api.codechef.com/oauth/authorize?response_type=code&client_id="+client_id+"&state=xyz&redirect_uri=https://sunburn21.github.io//auth";
+const url = "https://api.codechef.com/oauth/authorize?response_type=code&client_id="+client_id+"&state=xyz&redirect_uri=https://sunburn21.github.io/auth";
 const loginone = ()=>{
   window.location.href=url; 
   return false;

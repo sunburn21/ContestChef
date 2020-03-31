@@ -46,7 +46,7 @@ class App extends Component{
         <Link style={{color:'#333333'}} to='/contestchef/login'><FaSignInAlt/><span style={{fontSize:'18px'}}>Login</span> </Link>
         </div>
         <Switch>
-          <Route path='/contestchef/home' exact  render={(props)=>isLoggedIn?<Home {...props} user = {this.state.user} />:<LoginPage {...props} />}/>;
+          <Route path='/' exact  render={(props)=>isLoggedIn?<Home {...props} user = {this.state.user} />:<LoginPage {...props} />}/>;
           <Route path='/contestchef/login' exact component={LoginPage}/>;
           {isLoggedIn?null:<Route path="/contestchef/auth" exact component={Auth({authUser:this.authUser,state:this.state})} />}
           <Route path='/contestchef/contest/:id' render={(props)=>isLoggedIn?<ContestDetails {...props} user = {this.state.user} />:<LoginPage {...props}  />}/>

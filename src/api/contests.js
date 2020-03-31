@@ -64,3 +64,16 @@ export const getSubmissionsForProblem = async ({headers,id,pid}) =>{
       console.error(error);
     }
 }
+
+export const getContestRankings = async ({headers,id}) => {
+  try {
+      const { data } = await axios.get(
+        `/rankings/${id}`,{
+            headers: headers
+        } 
+      );
+      return data;
+    } catch (error) {
+      console.error(error);
+    }
+}

@@ -3,6 +3,7 @@ import {Card,Row,Col,Container} from 'react-bootstrap';
 import moment from 'moment';
 import Timer from '../timer';
 import Submissions from '../submissions';
+import Leaderboard from '../leaderboard';
 
 
 
@@ -29,11 +30,18 @@ export default (props)=>{
                                     {onGoing?<Timer data={timerprops}/>:(!hasStarted?<Timer data={timerprops}/>:"Contest has ended.")}
                                     </Row>
                                 </div>
-                                <div style={{display:'flex',justifyContent:'center'}}>
+                                {(props.isContestPage || props.isProblemPage ) && 
+                                <div style={{display:'flex',justifyContent:'center',marginBottom:'20px'}}>
                                     <Row className=''>
                                     <   Submissions subs={props.details.submissions} />
                                     </Row>  
-                                </div>
+                                </div>}
+                                {props.isContestPage && 
+                                (<div style={{display:'flex',justifyContent:'center'}}>
+                                    <Row className=''>
+                                    <   Leaderboard code={props.details.code} problems={props.details.problemsList} rankings={props.details.rankings} />
+                                    </Row>  
+                                </div>)}
                             </Container>
                         </Card.Body>
                     </Card>

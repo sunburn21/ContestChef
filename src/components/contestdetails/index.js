@@ -1,5 +1,5 @@
 import React,{Component} from 'react';
-import {getContestDetails,getSubmissions} from '../../api/contests';
+import {getContestDetails,getSubmissions,getContestRankings} from '../../api/contests';
 import Divisions from '../divisions';
 import {ifreqfailed} from '../../api/error';
 class ContestDetails extends React.Component {
@@ -16,7 +16,8 @@ class ContestDetails extends React.Component {
             freezingTime: 0,
             announcements: "",
             problemsList:[],
-            submissions: []
+            submissions: [],
+            rankings:[]
         };
       }
     componentDidMount = async ()=>{
@@ -30,11 +31,19 @@ class ContestDetails extends React.Component {
             return;
         }
         await this.setState({...contests.result.data.content});
+        const rankings = await getContestRankings({headers:this.props.user.headers,id:id});
+        if(ifreqfailed(rankings)){
+            return;
+        }
+        if(rankings && rankings.result){
+            await this.setState({rankings:rankings.result.data.content});
+        }else{
+            await this.setState({rankings:[]});
+        }
         const submissions = await getSubmissions({headers:this.props.user.headers,id:id});
         if(ifreqfailed(contests)){
             return;
         }
-        console.log(submissions);   
         if(submissions.result){
             await this.setState({submissions:submissions.result.data.content},()=>{
                 console.log(this.state.submissions);

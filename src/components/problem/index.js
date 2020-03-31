@@ -2,7 +2,7 @@ import React,{Component} from 'react';
 import {Row,Col,Container,Card,Button} from 'react-bootstrap';
 import MarkdownRender from '../problemstatement';
 import SubModal from '../modal';
-import {getSubmissionsForProblem} from '../../api/contests';
+import {getSubmissionsForProblem,getContestRankings} from '../../api/contests';
 import SideBar from '../sidebar';
 import {getProblem} from '../../api/contests';
 import {ifreqfailed} from '../../api/error';
@@ -46,7 +46,7 @@ class Problem extends Component{
                     </Card>
                 </Col>
                 <Col  xs lg={3}>
-                <SideBar details={this.state}/>
+                <SideBar isProblemPage={true} isContestPage={false} details={this.state}/>
                 </Col>
             </Row>
             </Container>

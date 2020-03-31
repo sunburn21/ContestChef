@@ -23,7 +23,7 @@ export default (props)=>{
                     </Card>
                 </Col>
                 <Col  xs lg={3}>
-                <SideBar details={props.details}/>
+                <SideBar isContestPage={!props.isParent} details={props.details}/>
                 </Col>
             </Row>
             </Container>

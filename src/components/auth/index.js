@@ -12,7 +12,7 @@ const getParameterByName = (name, url)=> {
   return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
 const client_secret = "50cdc33cc501f6ef3a149c56ad92ffeb";
-const redirect_uri  = "https://sunburn21.github.io/contestchef/auth";
+const redirect_uri  = "https://angry-chandrasekhar-fdd376.netlify.com/auth";
 const client_id = '83c9543d85c56057657533b11640f5e3';
 class Auth extends Component {
   componentDidMount = async () => {
@@ -26,7 +26,7 @@ class Auth extends Component {
           await this.props.data.authUser();
         }
           if(!this.props.data.state.user) this.props.history.push('/login');
-          this.props.history.push('/home');    
+          this.props.history.push('/');    
   };
 
   render() {

@@ -48,7 +48,7 @@ class ContestDetails extends React.Component {
 
     onDivClick = (a)=>{
         this.onPageRender(this.state.children[a]);
-        this.props.history.push(`/contestchef/contest/${this.state.children[a]}`);
+        this.props.history.push(`/contest/${this.state.children[a]}`);
     }
     
     render() {

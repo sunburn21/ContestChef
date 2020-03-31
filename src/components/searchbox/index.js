@@ -84,7 +84,7 @@ const getInitialState = () => ({
                         return ele[selop]===selected[0];
                       })
                       console.log(contest[0]);
-                      this.props.history.push(`/contestchef/contest/${contest[0].code}`)
+                      this.props.history.push(`/contest/${contest[0].code}`)
                   }}>
                   Submit
                 </Button>

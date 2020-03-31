@@ -41,7 +41,7 @@ class App extends Component{
     return (
       <Router>
       <div className="App">
-        <div style={{position:"fixed",left:'0',top:'0',fontSize:'30px',display:'flex',width:'150px',justifyContent:'space-around'}}> 
+        <div style={{position:"fixed",left:'0',top:'0',fontSize:'23px',display:'flex',width:'150px',justifyContent:'space-around'}}> 
         <Link style={{color:'#333333'}} to='/'> <IoIosHome/></Link>
         <Link style={{color:'#333333'}} to='/login'><FaSignInAlt/><span style={{fontSize:'18px'}}>Login</span> </Link>
         </div>

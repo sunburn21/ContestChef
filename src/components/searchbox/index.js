@@ -73,7 +73,7 @@ const getInitialState = () => ({
                 labelKey="capital"
                 onChange={(s) => this.setState({ selected: s },()=>{console.log(this.state.selected)})}
                 options={this.state.contests.map((ele)=>(ele[selop]))}
-                placeholder="Select a capital..."
+                placeholder="Select a Contest..."
                 selected={selected}
               />
               <InputGroup.Append className="input-group-append">
